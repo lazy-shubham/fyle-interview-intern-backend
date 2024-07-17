@@ -49,27 +49,27 @@ services:
 
 1. **Build the Docker Image:**
 
-Open a terminal, navigate to your project directory containing the Dockerfile and docker-compose.yml, and run:
+	Open a terminal, navigate to your project directory containing the Dockerfile and docker-compose.yml, and run:
 
 ```bash
-docker compose build
+	docker compose build
 ```
 
-This command builds the Docker image based on the Dockerfile and installs dependencies defined in requirements.txt.
+	This command builds the Docker image based on the Dockerfile and installs dependencies defined in requirements.txt.
 
 2. **Run the Docker Container:**
 
-After the build completes successfully, start the Docker container by running:
+	After the build completes successfully, start the Docker container by running:
 
 ```bash
 docker compose up
 ```
 
-This command starts your Flask application inside a Docker container using Gunicorn. It binds port 5000 of the container to port 5000 on your host machine, allowing you to access the application.
+	This command starts your Flask application inside a Docker container using Gunicorn. It binds port 5000 of the container to port 5000 on your host machine, allowing you to access the application.
 
 3. **Accessing the Application:**
 
-Open a web browser and go to **`http://localhost:5000`** to access your Flask application running inside the Docker container.
+	Open a web browser and go to **`http://localhost:5000`** to access your Flask application running inside the Docker container.
 
 ### Notes:
 
